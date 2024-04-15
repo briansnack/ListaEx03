@@ -17,10 +17,14 @@ public class Ex01 {
             System.out.println("Nota 3: ");
             double nota3 = leitor.nextDouble();
 
-            double media = Media.calcularMedia(nota1, nota2, nota3);
-            DecimalFormat formatador = new DecimalFormat("0.00");
+            Media media = new Media();
+            media.setNotas(nota1, nota2, nota3);
 
-            System.out.println("Nome: " + nome + " Média: " + formatador.format(media));
+            double mediaNota = media.calcularMedia();
+            DecimalFormat formatador = new DecimalFormat("0.00");
+            String mediaFormatada = formatador.format(mediaNota);
+
+            System.out.println("Nome: " + nome + " Média: " + mediaFormatada);
 
 
             leitor.close();
