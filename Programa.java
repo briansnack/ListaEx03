@@ -114,6 +114,8 @@ public class Programa {
             default:
             System.out.println("Exercício não reconhecido");
                 break;
+            
         }
+        leitor.close();
     }
 }
