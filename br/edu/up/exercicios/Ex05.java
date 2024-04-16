@@ -8,11 +8,14 @@ public class Ex05 {
             System.out.println("Valor da compra: ");
             double valorCompra = leitor.nextDouble();
             
-            double valorPrestacao = Prestacao.calcularPrestacao(valorCompra);
+            Prestacao prestacao = new Prestacao();
+            prestacao.setPrestacao(valorCompra);
 
+            double valorPrestacao = prestacao.calcularPrestacao();
             DecimalFormat formatador = new DecimalFormat("0.00");
-            
-            System.out.println("Valor da prestação: " + formatador.format(valorPrestacao));
+            String prestacaoFormatada = formatador.format(valorPrestacao); 
+
+            System.out.println("Valor da prestação: " + prestacaoFormatada);
 
             leitor.close();
         }

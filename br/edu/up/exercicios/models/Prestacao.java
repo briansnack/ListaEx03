@@ -1,5 +1,11 @@
 public class Prestacao {
-    public static double calcularPrestacao(double valorCompra){
+    private double valorCompra;
+
+    public void setPrestacao(double valorCompra){
+        this.valorCompra = valorCompra;
+    }
+    
+    public double calcularPrestacao(){
         return valorCompra / 5;
     }
 }
