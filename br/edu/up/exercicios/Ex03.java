@@ -13,11 +13,14 @@ public class Ex03 {
             System.out.println("Total em vendas: ");
             double vendas = leitor.nextDouble();
 
-            double salario = Salario.calcularSalario(salarioF, vendas);
+            Salario salario = new Salario();
+            salario.setSalario(salarioF, vendas);
 
+            double salarioMes = salario.calcularSalario();
             DecimalFormat formatador = new DecimalFormat("0.00");
+            String salarioFormatado = formatador.format(salarioMes);
 
-            System.out.println("Nome: " + nome + ", salario fixo: " + salarioF + ", salario do mês: " + formatador.format(salario));
+            System.out.println("Nome: " + nome + ", salario fixo: " + salarioF + ", salario do mês: " + salarioFormatado);
 
             leitor.close();
         }
