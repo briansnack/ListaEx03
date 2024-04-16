@@ -9,11 +9,14 @@ public class Ex02 {
             System.out.println("Combustivel gasto: ");
             double combustivel = leitor.nextDouble();
 
-            double consumoMedio = ConsumoMedio.calcularConsumo(distancia, combustivel);
+            ConsumoMedio consumoMedio = new ConsumoMedio();
+            consumoMedio.setConsumo(distancia, combustivel);
+
+            double mediaConsumo = consumoMedio.calcularConsumo();
             DecimalFormat formatador = new DecimalFormat("0.00");
+            String mediaFormatada = formatador.format(mediaConsumo);
 
-            System.out.println("Consumo médio " + formatador.format(consumoMedio) + " kms por litro");
-
+            System.out.println("Consumo médio " + mediaFormatada + " kms por litro");
 
             leitor.close();
         }
