@@ -10,11 +10,14 @@ public class Ex06 {
             System.out.println("Acréscimo %: ");
             double acrescimo = leitor.nextDouble();
 
-            double valorVenda = ValorVenda.calcularVenda(produto, acrescimo);
+            ValorVenda valorVenda = new ValorVenda();
+            valorVenda.setVendas(produto, acrescimo);
 
+            double valorTotal = valorVenda.calcularVenda();
             DecimalFormat formatador = new DecimalFormat("0.00");
+            String vendaFormatada = formatador.format(valorTotal);
 
-            System.out.println("Valor de venda: " + formatador.format(valorVenda));
+            System.out.println("Valor de venda: " + vendaFormatada);
             
             leitor.close();
         }
