@@ -7,11 +7,14 @@ public class Ex07 {
             System.out.println("Custo de fabricação: ");
             double custo = leitor.nextDouble(); 
 
-            double valorFinal = VendaCarro.calcularVendaCarro(custo);
+            VendaCarro vendaCarro = new VendaCarro();
+            vendaCarro.setCusto(custo);
 
+            double valorFinal = vendaCarro.calcularVendaCarro();
             DecimalFormat formatador = new DecimalFormat("0.00");
+            String vendaFormatada = formatador.format(valorFinal);
 
-            System.out.println("Valor de venda do carro: " + formatador.format(valorFinal));
+            System.out.println("Valor de venda do carro: " + vendaFormatada);
 
             leitor.close();
         }
