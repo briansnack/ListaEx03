@@ -11,11 +11,14 @@ public class Ex04 {
             System.out.println("Cotação do dólar: ");
             double valorDolar = leitor.nextDouble();
 
-            double conversao = Conversao.convesaoDolar(qtdDolar, valorDolar);
+            Conversao conversao = new Conversao();
+            conversao.setConversao(qtdDolar, valorDolar);
 
+            double conversaoFinal = conversao.convesaoDolar();
             DecimalFormat formatador = new DecimalFormat("0.00");
+            String conversaoFormatada = formatador.format(conversaoFinal);
 
-            System.out.println("Quantidade de reais disponíveis: " + formatador.format(conversao));
+            System.out.println("Quantidade de reais disponíveis: " + conversaoFormatada);
 
             leitor.close();
         }
