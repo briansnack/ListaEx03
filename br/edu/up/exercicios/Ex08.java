@@ -14,16 +14,19 @@ public class Ex08 {
                 notas[i] = leitor.nextDouble();
             }
 
-            double media = MediaNotas.calcularMedia(notas);
+            MediaNotas mediaNotas = new MediaNotas();
+            mediaNotas.setNotas(notas);
 
+            double media = mediaNotas.calcularMedia();
             DecimalFormat formatador = new DecimalFormat("0.00");
-            
+            String mediaFormatada =  formatador.format(media);
+
             if (media >= 7) {
-                System.out.println("Média: " + formatador.format(media) + " \nAprovado");
+                System.out.println(nome + " Média: " + mediaFormatada + " \nAprovado");
             } else if (media >= 5.1 && media <= 6.9) {
-                System.out.println("Média: " + formatador.format(media) + " \nRecuperação");
+                System.out.println(nome + " Média: " + mediaFormatada + " \nRecuperação");
             } else {
-                System.out.println("Média: " + formatador.format(media) + " \nReprovado");
+                System.out.println(nome + " Média: " + mediaFormatada + " \nReprovado");
             }
             leitor.close();
         }
