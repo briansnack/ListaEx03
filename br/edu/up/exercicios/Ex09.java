@@ -1,9 +1,8 @@
-import java.util.Random;
-
 public class Ex09 {
     public static void executar() {
-        int[] numeros = GeradorNumeros.gerarNumerosAleatorios(80);
-        int quantidadeNumerosNoIntervalo = GeradorNumeros.contarNumerosNoIntervalo(numeros);
+        GeradorNumeros gerador = new GeradorNumeros(80);
+        int[] numeros = gerador.gerarNumerosAleatorios();
+        int quantidadeNumerosNoIntervalo = gerador.contarNumerosNoIntervalo();
         
         System.out.println("Números gerados:");
         for (int i = 0; i < numeros.length; i++) {
