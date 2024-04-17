@@ -1,7 +1,7 @@
-public class CadastroPessoa {
+class CadastroPessoa {
     static class Pessoa {
-        public String nome;
-        public char sexo;
+        private String nome;
+        private char sexo;
 
         public Pessoa(String nome, char sexo) {
             this.nome = nome;
