@@ -7,7 +7,9 @@ public class Ex21 {
         System.out.println("Idade do atleta: ");
         int idade = leitor.nextInt();
 
-        String idadeAtleta = Idade.idadeAtleta(idade);
+        Idade idade2 = new Idade(); 
+
+        String idadeAtleta = idade2.idadeAtleta(idade);
         System.out.println(idadeAtleta);
 
         leitor.close();

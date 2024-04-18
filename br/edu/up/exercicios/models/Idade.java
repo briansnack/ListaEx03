@@ -1,5 +1,15 @@
 public class Idade {
-    public static String idadeAtleta(int idade){
+    private int idade;
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String idadeAtleta(int idade){
         if (idade >= 5 && idade <= 7) {
             return "Infantil A";
         } else if (idade >= 8 && idade <= 10){
