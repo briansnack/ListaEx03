@@ -13,10 +13,11 @@ public class Ex24 {
         System.out.println("Informe a nota do exame final (0 a 10): ");
         double notaExame = leitor.nextDouble();
 
-        double notaFinal = CalcularNotaFinal.calcularNotaFinal(notaLaboratorio, notaAvaliacao, notaExame);
+        CalcularNotaFinal calcularNotaFinal = new CalcularNotaFinal(notaLaboratorio, notaAvaliacao, notaExame);
+
+        double notaFinal = calcularNotaFinal.calcularNotaFinal(notaLaboratorio, notaAvaliacao, notaExame);
 
         System.out.println("A nota final do estudante é: " + notaFinal);
-
 
         leitor.close();
     }
