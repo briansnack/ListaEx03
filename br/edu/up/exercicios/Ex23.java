@@ -22,5 +22,6 @@ public class Ex23 {
         System.out.println("Peso ideal: " + pesoIdeal + " kg");
 
         leitor.close();
+        
     }
 }
