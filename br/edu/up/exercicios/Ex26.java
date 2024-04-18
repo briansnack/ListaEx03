@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class Ex26 {
     public static void executar(){
         Scanner leitor = new Scanner(System.in);
@@ -18,7 +17,9 @@ public class Ex26 {
         System.out.println("Informe o grupo de risco do pretendente (baixo/médio/alto): ");
         String grupoRisco = leitor.next().toLowerCase();
 
-        int categoria = Categoria.determinarCategoria(idade, grupoRisco);
+        Categoria categ = new Categoria(idade, grupoRisco);
+
+        int categoria = categ.determinarCategoria(idade, grupoRisco);
 
         System.out.println("Nome do pretendente: " + nome);
         System.out.println("Idade do pretendente: " + idade);

@@ -1,5 +1,29 @@
 public class Categoria {
-    public static int determinarCategoria(int idade, String grupoRisco) {
+    private int idade;
+    private String grupoRisco;
+
+    public Categoria(int idade, String grupoRisco) {
+        this.idade = idade;
+        this.grupoRisco = grupoRisco;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getGrupoRisco() {
+        return grupoRisco;
+    }
+
+    public void setGrupoRisco(String grupoRisco) {
+        this.grupoRisco = grupoRisco;
+    }
+
+    public int determinarCategoria(int idade, String grupoRisco) {
         if (idade >= 17 && idade <= 20) {
             switch (grupoRisco) {
                 case "baixo":
