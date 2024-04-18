@@ -1,7 +1,6 @@
 public class Funcionario {
-    public double salario;
-    public static double salarioMinimo = 1100.00;
-
+    private double salario;
+    private double salarioMinimo = 1100.00;
 
     public Funcionario(double salario){
         this.salario = salario;

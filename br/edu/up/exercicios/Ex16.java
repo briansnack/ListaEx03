@@ -5,7 +5,7 @@ public class Ex16 {
         Scanner leitor = new Scanner(System.in);
 
             System.out.println("Informe o salário de cada funcionário:");
-            Funcionario[] funcionarios = new Funcionario[584];
+            Funcionario[] funcionarios = new Funcionario[5];
 
             for (int i = 0; i < funcionarios.length; i++) {
                 System.out.print("Salário do funcionário " + (i + 1) + ": R$");
@@ -20,7 +20,6 @@ public class Ex16 {
                     System.out.println("Reajuste para o funcionário " + (i+1) + ": " + " R$" + reajuste);
                 }
             }
-
             leitor.close();
         }
     }
