@@ -20,6 +20,7 @@ public class Ex22 {
                 break;
             default:
                 System.out.println("Tipo de cliente inválido!");
+                leitor.close();
                 return;
         }
 

@@ -1,6 +1,6 @@
 public class ContaDeLuz {
-    public int tipoCliente;
-    public double valorPorKWh;
+    private int tipoCliente;
+    private double valorPorKWh;
 
     public ContaDeLuz(int tipoCliente, double valorPorKWh) {
         this.tipoCliente = tipoCliente;
