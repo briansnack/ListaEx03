@@ -1,4 +1,5 @@
 public class CalculadoraPesoIdeal {
+    
     public static double calcularPesoIdeal(Pessoa1 pessoa) {
         double altura = pessoa.getAltura();
         int idade = pessoa.getIdade();
