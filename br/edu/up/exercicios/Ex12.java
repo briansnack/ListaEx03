@@ -9,17 +9,17 @@
             do {
                 System.out.println("Digite o ano do veículo: ");
                 int ano = leitor.nextInt();
-                leitor.nextLine(); // Limpar o buffer de entrada
+                leitor.nextLine(); 
                 
                 System.out.println("Digite o valor do veículo: ");
                 double valor = leitor.nextDouble();
-                leitor.nextLine(); // Limpar o buffer de entrada
+                leitor.nextLine(); 
                 
                 concessionaria.calcularDesconto(ano, valor);
     
                 System.out.println("Deseja continuar calculando desconto? (S/N)");
                 continuar = leitor.next().charAt(0);
-                leitor.nextLine(); // Limpar o buffer de entrada
+                leitor.nextLine(); 
             } while (continuar == 'S' || continuar == 's');
     
             concessionaria.mostrarTotais();

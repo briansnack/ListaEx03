@@ -1,7 +1,7 @@
 public class Concessionaria {
-    public int totalAte2000;
-    public int totalGeral;
-    public double totalDesconto;
+    private int totalAte2000;
+    private int totalGeral;
+    private double totalDesconto;
     
     public Concessionaria() {
         totalAte2000 = 0;
