@@ -1,5 +1,24 @@
 public class Reajuste {
-    public static double calcularReajuste(double salario, double salarioMinimo){
+    private double salario;
+    private double salarioMinimo;
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public double getSalarioMinimo() {
+        return salarioMinimo;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    public void setSalarioMinimo(double salarioMinimo) {
+        this.salarioMinimo = salarioMinimo;
+    }
+
+    public double calcularReajuste(){
         double reajuste = 0;
         if (salario < 3 * salarioMinimo) {
             reajuste = salario * 0.5;

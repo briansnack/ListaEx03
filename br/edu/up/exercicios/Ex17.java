@@ -13,7 +13,11 @@ public class Ex17 {
         System.out.println("Salário Mínimo: ");
         double salarioMinimo = leitor.nextDouble();
 
-        double reajuste = Reajuste.calcularReajuste(salario, salarioMinimo);
+        Reajuste reajusteSalario = new Reajuste();
+        reajusteSalario.setSalario(salario);
+        reajusteSalario.setSalarioMinimo(salarioMinimo);
+        
+        double reajuste = reajusteSalario.calcularReajuste();
         double novoSalario = salario + reajuste;
 
         System.out.println("Nome do funcionário: " + nome);
