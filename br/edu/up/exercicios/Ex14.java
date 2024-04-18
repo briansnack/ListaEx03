@@ -4,7 +4,6 @@ public class Ex14 {
     public static void executar() {
         Scanner leitor = new Scanner(System.in);
         PrecoProdutos precosProdutos = new PrecoProdutos();
-
         double somaPrecoCusto = 0;
         double somaPrecoVenda = 0;
 
@@ -21,8 +20,8 @@ public class Ex14 {
             precosProdutos.verificarLucroPrejuizo(precoCusto, precoVenda);
         }
 
-        precosProdutos.mostrarMediaPrecos(somaPrecoCusto / 40, somaPrecoVenda / 40);
-
+        precosProdutos.calcularMediaPrecos(somaPrecoCusto / 40, somaPrecoVenda / 40);
+        precosProdutos.mostrarMediaPrecos();
         leitor.close();
     }
 }
