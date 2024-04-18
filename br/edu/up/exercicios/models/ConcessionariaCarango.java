@@ -1,5 +1,13 @@
 public class ConcessionariaCarango {
-    public static double calcularDesconto(double valorVeiculo, String tipoCombustivel){
+    private double valorVeiculo;
+    private String tipoCombustivel;
+
+    public ConcessionariaCarango(double valorVeiculo, String tipoCombustivel){
+        this.valorVeiculo = valorVeiculo;
+        this.tipoCombustivel = tipoCombustivel;
+    }
+
+    public double calcularDesconto(){
         double desconto;
         switch (tipoCombustivel) {
             case "alcool":
@@ -21,4 +29,21 @@ public class ConcessionariaCarango {
         }
         return desconto;
     }
+
+    public double getValorVeiculo() {
+        return valorVeiculo;
+    }
+
+    public void setValorVeiculo(double valorVeiculo) {
+        this.valorVeiculo = valorVeiculo;
+    }
+
+    public String getTipoCombustivel() {
+        return tipoCombustivel;
+    }
+
+    public void setTipoCombustivel(String tipoCombustivel) {
+        this.tipoCombustivel = tipoCombustivel;
+    }
+
 }

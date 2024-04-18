@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Ex15 {
     public static void executar(){
         Scanner leitor = new Scanner(System.in);{
-        ConcessionariaCarango concessionaria = new ConcessionariaCarango();
+        ConcessionariaCarango concessionaria;
 
         double totalDesconto = 0;
         double totalPago = 0;
@@ -20,7 +20,9 @@ public class Ex15 {
             System.out.println("Informe o tipo de combustível (alcool, gasolina ou diesel)");
             String tipoCombustivel = leitor.nextLine().toLowerCase();
         
-            double desconto = concessionaria.calcularDesconto(valorVeiculo, tipoCombustivel);
+            concessionaria = new ConcessionariaCarango(valorVeiculo, tipoCombustivel); 
+            
+            double desconto = concessionaria.calcularDesconto();
             totalDesconto += desconto;
         
             double valorPago = valorVeiculo - desconto;
