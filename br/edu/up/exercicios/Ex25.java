@@ -20,7 +20,9 @@ public class Ex25 {
 
         double notaFinal = CalcularNotaFinal1.calcularNotaFinal(notaLaboratorio, notaAvaliacao, notaExame);
 
-        String classificacao = Classificacao.determinarClassificacao(notaFinal);
+        Classificacao classi = new Classificacao(notaFinal);
+
+        String classificacao = classi.determinarClassificacao();
 
         System.out.println("Nome do estudante: " + nome);
         System.out.println("Número de matrícula: " + matricula);

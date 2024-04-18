@@ -1,5 +1,19 @@
 public class Classificacao {
-    public static String determinarClassificacao(double notaFinal) {
+    private double notaFinal;
+    
+    public Classificacao(double notaFinal) {
+        this.notaFinal = notaFinal;
+    }
+
+    public double getNotaFinal() {
+        return notaFinal;
+    }
+
+    public void setNotaFinal(double notaFinal) {
+        this.notaFinal = notaFinal;
+    }
+
+    public String determinarClassificacao() {
         if (notaFinal >= 8 && notaFinal <= 10) {
             return "A";
         } else if (notaFinal >= 7 && notaFinal < 8) {
