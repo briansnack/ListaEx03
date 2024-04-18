@@ -7,7 +7,7 @@ public class Ex13 {
 
             System.out.println("Quantas pessoas deseja cadastrar?");
             int n = leitor.nextInt();
-            leitor.nextLine(); // Limpar o buffer de entrada
+            leitor.nextLine(); 
 
             for (int i = 0; i < n; i++) {
             System.out.println("Dados da pessoa " + (i + 1) + ":");
@@ -17,7 +17,7 @@ public class Ex13 {
             char sexo = leitor.nextLine().toUpperCase().charAt(0);
             System.out.println("Idade:");
             int idade = leitor.nextInt();
-            leitor.nextLine(); // Limpar o buffer de entrada
+            leitor.nextLine(); 
             System.out.println("Saúde (Apta/Inapta):");
             String saude = leitor.nextLine();
 
