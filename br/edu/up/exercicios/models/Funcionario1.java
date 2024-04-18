@@ -4,6 +4,34 @@ class Funcionario1 {
     private char sexo;
     private double salarioFixo;
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public char getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }
+
+    public double getSalarioFixo() {
+        return salarioFixo;
+    }
+
+    public void setSalarioFixo(double salarioFixo) {
+        this.salarioFixo = salarioFixo;
+    }
+
     public Funcionario1(String nome, int idade, char sexo, double salarioFixo) {
         this.nome = nome;
         this.idade = idade;

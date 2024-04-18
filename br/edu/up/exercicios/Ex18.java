@@ -24,5 +24,6 @@ public class Ex18 {
         System.out.println("Salário líquido: R$" + salarioLiquido);
 
         leitor.close();
+        
     }
 }
