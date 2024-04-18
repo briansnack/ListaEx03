@@ -10,7 +10,9 @@ public class Ex20 {
         System.out.println("Horas trabalhadas: ");
         double horas = leitor.nextDouble();
 
-        double salario = SalarioProfessor.calcularSalario(nivel, horas);
+        SalarioProfessor salarioProfessor = new SalarioProfessor();
+
+        double salario = salarioProfessor.calcularSalario(nivel, horas);
 
         System.out.println("Salário do professor: " + salario);
 
