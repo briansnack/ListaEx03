@@ -18,7 +18,8 @@ public class Ex25 {
         System.out.println("Informe a nota do exame final (0 a 10): ");
         double notaExame = leitor.nextDouble();
 
-        double notaFinal = CalcularNotaFinal1.calcularNotaFinal(notaLaboratorio, notaAvaliacao, notaExame);
+        CalcularNotaFinal1 calcularNotaFinal = new CalcularNotaFinal1(notaLaboratorio, notaAvaliacao, notaExame);
+        double notaFinal = calcularNotaFinal.calcularNotaFinal(notaLaboratorio, notaAvaliacao, notaExame);
 
         Classificacao classi = new Classificacao(notaFinal);
 
